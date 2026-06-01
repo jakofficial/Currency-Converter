@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">  
+</head>
+<body>
+  <div class="title">
+    <h1>Currency Converter</h1>
+  </div>
+  <div id="outerContainer">
+    <div id="container">
+      <form>
+        <div class="amount">
+          <p class="request">Enter Amount</p>
+          <input type="text"/>
+        </div>
+        <div class="dropdown">
+          <div class="from-section">
+            <p class="para">From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png">
+              <select name="from">
+                <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="exchangeSymbol">
+            <i class="fa-solid fa-arrow-right-arrow-left" id="symbol"></i>
+          </div>
+          <div class="to-section">
+            <p class="para">To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/PK/flat/64.png">
+              <select name="to">
+                <option value="PKR">PKR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="msgPara">
+          <p>Exchange Rate:</p>
+        </div>
+        <div class="msg">
+          <p></p>
+        </div>
+        <div class="btn">
+        <button>Get Exchange Rate</button>
+        </div>
+      </form>       
+    </div>
+  </div>
+
+
+<script src="script.js"></script>  
+</body>
+</html>
